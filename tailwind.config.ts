@@ -7,5 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [],
+  theme: {
+    extend: {
+      colors: {
+        "gh-red-400": "#ee483e",
+        "gh-red-600": "#db2a21",
+      },
+    },
+  },
 };
 export default config;
