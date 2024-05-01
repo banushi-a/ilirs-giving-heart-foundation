@@ -13,7 +13,7 @@ export default function Links() {
         {sections.map((section) => {
           return (
             <li
-              className="hover:bg-gray-200 bg-gray-100 rounded-full p-3"
+              className="hover:bg-gh-red-800 bg-gh-red-400 text-white rounded-full px-3 py-2 my-2 font-semibold transition-colors duration-300 ease-in-out w-[6rem] text-center"
               key={section.href}
             >
               <a href={section.href}>{section.name}</a>
