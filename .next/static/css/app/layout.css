@@ -1,6 +1,6 @@
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/.pnpm/next@14.2.3_react-dom@18.3.1_react@18.3.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/.pnpm/next@14.2.3_react-dom@18.3.1_react@18.3.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/styles/globals.css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/styles/globals.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 *//*
@@ -522,17 +522,11 @@ video {
 .w-\[66vw\] {
   width: 66vw;
 }
-.w-screen {
-  width: 100vw;
-}
-.w-\[20rem\] {
-  width: 20rem;
-}
-.w-\[8rem\] {
-  width: 8rem;
-}
 .w-\[6rem\] {
   width: 6rem;
+}
+.w-screen {
+  width: 100vw;
 }
 @keyframes pulse {
 
@@ -565,9 +559,6 @@ video {
 .gap-4 {
   gap: 1rem;
 }
-.gap-2 {
-  gap: 0.5rem;
-}
 .gap-x-2 {
   column-gap: 0.5rem;
 }
@@ -594,17 +585,13 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.bg-gray-100 {
+.bg-gh-red-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(238 72 62 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-gh-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 72 62 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -614,14 +601,8 @@ video {
   --tw-gradient-to: rgb(238 72 62 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
-.to-gh-red-600 {
-  --tw-gradient-to: #db2a21 var(--tw-gradient-to-position);
-}
 .to-gh-red-800 {
   --tw-gradient-to: #c91910 var(--tw-gradient-to-position);
-}
-.p-3 {
-  padding: 0.75rem;
 }
 .p-4 {
   padding: 1rem;
@@ -636,14 +617,6 @@ video {
 }
 .text-center {
   text-align: center;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -662,14 +635,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-gh-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(219 42 33 / var(--tw-text-opacity));
-}
-.text-gh-red-800 {
-  --tw-text-opacity: 1;
-  color: rgb(201 25 16 / var(--tw-text-opacity));
 }
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -694,22 +659,17 @@ video {
   --background-end-rgb: 255, 255, 255;
 }
 
-.hover\:bg-gray-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gh-red-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(201 25 16 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 640px) {
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
+@media (min-width: 640px) {
 
   .sm\:text-xl {
     font-size: 1.25rem;
@@ -718,11 +678,6 @@ video {
 }
 
 @media (min-width: 768px) {
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
 
   .md\:text-2xl {
     font-size: 1.5rem;
@@ -736,11 +691,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 
   .lg\:text-4xl {
     font-size: 2.25rem;
