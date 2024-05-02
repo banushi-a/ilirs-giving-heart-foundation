@@ -6,9 +6,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center gap-4">
       <Header />
       <Links />
-      <p id="about-us">TODO: mission statement section</p>
-      <p>TODO: events section</p>
-      <p>TODO: previous work section</p>
+      <p>🚧 Website Under Construction 🚧</p>
+      <p>❤️ Donations Can Be Processed! ❤️</p>
     </main>
   );
 }
