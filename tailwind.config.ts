@@ -11,6 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "gh-red-200": "#f06059",
         "gh-red-400": "#ee483e",
         "gh-red-600": "#db2a21",
         "gh-red-800": "#c91910",

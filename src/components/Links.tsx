@@ -3,17 +3,17 @@ export default function Links() {
     { name: "About Us", href: "#about-us" },
     { name: "Donate", href: "#donate" },
     { name: "Events", href: "#events" },
-    { name: "Our Work", href: "#our-work" },
-    { name: "Volunteer", href: "#volunteer" },
+    // { name: "Our Work", href: "#our-work" },
+    // { name: "Volunteer", href: "#volunteer" },
   ];
 
   return (
     <section>
-      <ul className="flex flex-wrap justify-between aligign-center w-[66vw]">
+      <ul className="flex flex-wrap justify-between align-center gap-4 md:gap-8 lg:gap-12">
         {sections.map((section) => {
           return (
             <li
-              className="hover:bg-gh-red-800 bg-gh-red-400 text-white rounded-full px-3 py-2 my-2 font-semibold transition-colors duration-300 ease-in-out w-[6rem] text-center"
+              className="hover:bg-gh-red-600 active:bg-gh-red-800 bg-gh-red-400 text-white rounded-full px-3 py-2 my-2 font-semibold transition-colors duration-300 ease-in-out w-[6rem] text-center"
               key={section.href}
             >
               <a href={section.href}>{section.name}</a>
