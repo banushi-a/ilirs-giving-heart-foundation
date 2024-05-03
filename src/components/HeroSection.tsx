@@ -12,8 +12,8 @@ export default function HeroSection() {
 
       {/* Text Overlay */}
       <div className="absolute inset-0 flex items-end justify-start p-2 sm:p-4 md:p-6 lg:p-8">
-        <div className="text-start bg-gh-red-800 p-2 md:p-4 rounded-2xl">
-          <h1 className="text-lg md:text-2xl lg:text-4xl font-bold text-white drop-shadow-2xl">
+        <div className="text-start bg-gh-red-800 p-2 md:p-4 rounded-2xl shadow-2xl shadow-black">
+          <h1 className="text-lg md:text-2xl lg:text-4xl font-bold text-white">
             Red Out Fundraiser
           </h1>
           <p className="text-sm md:text-md lg:text-lg text-white">

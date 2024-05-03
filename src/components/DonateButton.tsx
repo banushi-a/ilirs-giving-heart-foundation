@@ -11,7 +11,7 @@ export default function DonateButton() {
     >
       <button
         type="button"
-        className="flex items-center justify-center font-semibold border-2 bg-white border-white rounded-full px-3 py-2 gap-x-2 hover:bg-gray-200 transition-colors duration-300 ease-in-out overflow-hidden relative"
+        className="flex items-center justify-center font-semibold border-2 bg-white border-white rounded-full px-3 py-2 gap-x-2 hover:bg-gray-200 transition-colors duration-300 ease-in-out overflow-hidden h-14"
         style={{
           backgroundImage:
             "linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.1), rgba(255, 255, 255, 0))",
