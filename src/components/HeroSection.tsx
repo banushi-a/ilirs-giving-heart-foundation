@@ -7,8 +7,9 @@ export default function HeroSection() {
       <Image
         src={Hero}
         alt={"Red Out Fundraiser Group Photo"}
-        className="rounded-2xl"
+        className="object-cover"
       />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent "></div>
 
       {/* Text Overlay */}
       <div className="absolute inset-0 flex items-end justify-start p-2 sm:p-4 md:p-6 lg:p-8">

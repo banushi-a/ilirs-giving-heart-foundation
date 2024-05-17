@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth min-w-screen">
       <body className="flex flex-col items-center">
         <Header />
-        <section className="max-w-[95vw] md:max-w-[80vw]">{children}</section>
+        {children}
       </body>
     </html>
   );
