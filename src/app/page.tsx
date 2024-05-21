@@ -1,4 +1,5 @@
 import AboutSection from "../components/AboutSection";
+import EventsSection from "../components/EventsSection";
 import HeroSection from "../components/HeroSection";
 
 export default function Home() {
@@ -7,8 +8,7 @@ export default function Home() {
       {/* <Links /> */}
       <HeroSection />
       <AboutSection />
-      <p>🚧 Website Under Construction 🚧</p>
-      <p>❤️ Donations Can Be Processed! ❤️</p>
+      <EventsSection />
     </main>
   );
 }

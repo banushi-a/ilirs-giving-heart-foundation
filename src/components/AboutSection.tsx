@@ -5,8 +5,8 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="bg-black text-white w-screen p-8" id="about">
-      <h2 className="text-3xl lg:text-4xl font-semibold flex justify-start items-center">
+    <section className="bg-black text-white w-screen p-8 pb-0" id="about">
+      <h2 className="text-3xl lg:text-4xl font-semibold flex justify-start items-center text-gh-red-200">
         About Our Mission
       </h2>
       {paragraphs.map((p) => {
