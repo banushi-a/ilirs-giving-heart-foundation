@@ -9,9 +9,12 @@ export default function AboutSection() {
       <h2 className="text-3xl lg:text-4xl font-semibold flex justify-start items-center text-gh-red-200">
         About Our Mission
       </h2>
-      {paragraphs.map((p) => {
+      {paragraphs.map((p, i) => {
         return (
-          <p className="text-lg lg:text-xl flex justify-start my-4 italic">
+          <p
+            key={"mission paragraphs" + i}
+            className="text-lg lg:text-xl flex justify-start my-4 italic"
+          >
             {p}
           </p>
         );

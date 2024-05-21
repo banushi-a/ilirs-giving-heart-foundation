@@ -11,7 +11,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-gradient-to-r from-gh-red-800 to-gh-red-200 w-screen h-24 flex justify-between items-center p-4 gap-x-4 sticky top-0 z-10">
+    <header className="bg-gradient-to-r from-gh-red-800 to-gh-red-200 w-screen h-24 flex justify-between items-center p-4 gap-x-4 sticky top-0 z-10 border-b-2 border-white">
       <div className="flex items-center gap-x-4">
         <Image
           src={Logo}
