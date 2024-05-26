@@ -39,7 +39,11 @@ export default function EventsSection() {
             </div>
             <div className="flex flex-col justify-center bg-black text-white text-right col-span-5 lg:col-span-2 lg:text-xl p-8 italic gap-3">
               {event.paragraphs.map((paragraph, i) => {
-                return <p key={"paragraph" + i}>{paragraph}</p>;
+                return (
+                  <p key={"paragraph" + i} className="lg:leading-6">
+                    {paragraph}
+                  </p>
+                );
               })}
             </div>
           </div>

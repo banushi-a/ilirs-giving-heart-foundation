@@ -4,7 +4,7 @@ export default function VolunteerSection() {
   return (
     <section className="bg-neutral-700 text-white w-full grid grid-cols-2 gap-y-4 py-10 px-12">
       <div className="col-span-2 md:col-span-1 md:border-r-2 border-gh-red-800 md:px-12">
-        <h2 className="text-2xl font-semibold text-gh-red-200">
+        <h2 className="text-2xl font-semibold text-gh-red-400">
           Interested in Volunteering?
         </h2>
         <p className="italic">
