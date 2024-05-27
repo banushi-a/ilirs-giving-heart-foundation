@@ -9,8 +9,8 @@ export default function Home() {
       {/* <Links /> */}
       <HeroSection />
       <AboutSection />
-      <VolunteerSection />
       <EventsSection />
+      <VolunteerSection />
     </main>
   );
 }
