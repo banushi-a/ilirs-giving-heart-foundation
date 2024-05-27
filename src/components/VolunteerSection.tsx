@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+import Logo from "../public/IlirsGivingHeartFoundation.png";
 import Button from "./Button";
 
 export default function VolunteerSection() {
@@ -19,6 +22,13 @@ export default function VolunteerSection() {
           target={"_blank"}
           text={"Keep In Touch With Us"}
           extraStyles={"px-10"}
+        />
+        <Image
+          src={Logo}
+          width={90}
+          height={90}
+          alt="Ilir's Giving Heart Foundation Logo"
+          className="ml-8"
         />
       </div>
     </section>

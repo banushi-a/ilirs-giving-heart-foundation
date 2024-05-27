@@ -535,6 +535,12 @@ video {
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
 }
+.ml-4 {
+  margin-left: 1rem !important;
+}
+.ml-8 {
+  margin-left: 2rem !important;
+}
 .flex {
   display: flex !important;
 }
@@ -610,6 +616,9 @@ video {
 }
 .gap-4 {
   gap: 1rem !important;
+}
+.gap-8 {
+  gap: 2rem !important;
 }
 .gap-x-2 {
   column-gap: 0.5rem !important;
