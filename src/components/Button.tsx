@@ -1,8 +1,11 @@
+import { CSSProperties } from "react";
+
 type ButtonProps = {
   href: string;
   target?: string;
   text: string;
   extraStyles?: string;
+  style?: CSSProperties;
 };
 
 export default function Button(props: ButtonProps) {
@@ -11,6 +14,7 @@ export default function Button(props: ButtonProps) {
       <button
         type="button"
         className={`flex items-center justify-center font-semibold border-2 bg-white rounded-full px-3 py-2 gap-x-2 hover:bg-gray-200 transition-colors duration-300 ease-in-out overflow-hidden h-14 text-gh-red-600 border-gh-red-600 ${props.extraStyles}`}
+        style={props.style}
       >
         {props.text}
       </button>
