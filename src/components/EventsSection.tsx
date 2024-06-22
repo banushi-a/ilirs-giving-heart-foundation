@@ -8,7 +8,6 @@ export default function EventsSection() {
       altText: "Two Brothers Bar and Grill Outside View",
       name: "Ilir's Celebration of Life Blockparty Fundraiser",
       date: "June 22nd 2024",
-      // volunteerLink: "https://forms.fillout.com/t/nPaMuUDQ9Uus",
       paragraphs: [
         "Once met, never forgotten. Ilir loved brining people together and extending a hand to anyone in need. Let's honor Ilir by coming together for what made him the most happy: family, friends, & music! Join us in front of Two Brother's Bar on Fulton Street for a special tribute Block Party starting at 2PM. An all day celebration of life for the man who wanted everyone to always have a good time.",
         "Appearances by Pink Houses, The Gary Band, Mad Tadders, and special guest Jason Stubbs.",
