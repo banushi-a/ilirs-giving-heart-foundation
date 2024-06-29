@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Button from "./Button";
+import { text } from "stream/consumers";
 
 export type EventProps = {
   image: StaticImageData;
@@ -8,17 +9,54 @@ export type EventProps = {
   date: string;
   volunteerLink?: string;
   paragraphs: string[];
+  imageOnRight?: boolean;
 };
 
 export default function Event(event: EventProps) {
+  const textComponentLeft = (
+    <div
+      className={`flex flex-col justify-center col-span-5 lg:col-span-2 bg-black text-white lg:text-xl p-8 italic gap-3 `}
+    >
+      {event.paragraphs.map((paragraph, i) => {
+        return (
+          <p key={"paragraph" + i} className="lg:leading-6">
+            {paragraph}
+          </p>
+        );
+      })}
+    </div>
+  );
+
+  const textComponentRight = (
+    <div
+      className={`flex flex-col justify-center col-span-5 lg:col-span-2 bg-black text-white lg:text-xl p-8 italic gap-3 lg:${
+        event.imageOnRight ? "hidden" : " "
+      }`}
+    >
+      {event.paragraphs.map((paragraph, i) => {
+        return (
+          <p key={"paragraph" + i} className="lg:leading-6">
+            {paragraph}
+          </p>
+        );
+      })}
+    </div>
+  );
+
   return (
     <div className="col-span-5 grid grid-cols-5">
+      {event.imageOnRight && textComponentLeft}
       <div className="relative col-span-5 lg:col-span-3">
         <Image src={event.image} alt={event.altText} />
         {/* Shadow Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/10 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-l from-black via-black/10 to-transparent invisible lg:visible"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/10 to-transparent" />
+        {!event.imageOnRight && (
+          <div className="absolute inset-0 bg-gradient-to-l from-black via-black/10 to-transparent invisible lg:visible" />
+        )}
+        {event.imageOnRight && (
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/10 to-transparent invisible lg:visible" />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
         {/* Event Name Overlay */}
         <div className="text-5xl absolute inset-0 m-auto text-white text-center flex flex-col items-center gap-4 w-fit h-fit p-2">
           <h2 className="font-bold">{event.name}</h2>
@@ -33,15 +71,7 @@ export default function Event(event: EventProps) {
           )}
         </div>
       </div>
-      <div className="flex flex-col justify-center bg-black text-white text-right col-span-5 lg:col-span-2 lg:text-xl p-8 italic gap-3">
-        {event.paragraphs.map((paragraph, i) => {
-          return (
-            <p key={"paragraph" + i} className="lg:leading-6">
-              {paragraph}
-            </p>
-          );
-        })}
-      </div>
+      {textComponentRight}
     </div>
   );
 }
