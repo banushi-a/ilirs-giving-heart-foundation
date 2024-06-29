@@ -15,7 +15,7 @@ export type EventProps = {
 export default function Event(event: EventProps) {
   const textComponentLeft = (
     <div
-      className={`flex flex-col justify-center col-span-5 lg:col-span-2 bg-black text-white lg:text-xl p-8 italic gap-3 `}
+      className={`hidden lg:flex flex-col justify-center col-span-5 lg:col-span-2 bg-black text-white lg:text-xl p-8 italic gap-3`}
     >
       {event.paragraphs.map((paragraph, i) => {
         return (
@@ -29,8 +29,8 @@ export default function Event(event: EventProps) {
 
   const textComponentRight = (
     <div
-      className={`flex flex-col justify-center col-span-5 lg:col-span-2 bg-black text-white lg:text-xl p-8 italic gap-3 lg:${
-        event.imageOnRight ? "hidden" : " "
+      className={`flex-col justify-center col-span-5 lg:col-span-2 bg-black text-white lg:text-xl p-8 italic gap-3 ${
+        event.imageOnRight ? "lg:hidden" : "flex"
       }`}
     >
       {event.paragraphs.map((paragraph, i) => {
