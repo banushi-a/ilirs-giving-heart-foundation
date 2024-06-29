@@ -945,6 +945,22 @@ video {
     margin-bottom: 0.5rem !important;
   }
 
+  .lg\:block {
+    display: block !important;
+  }
+
+  .lg\:flex {
+    display: flex !important;
+  }
+
+  .lg\:grid {
+    display: grid !important;
+  }
+
+  .lg\:hidden {
+    display: none !important;
+  }
+
   .lg\:p-8 {
     padding: 2rem !important;
   }
