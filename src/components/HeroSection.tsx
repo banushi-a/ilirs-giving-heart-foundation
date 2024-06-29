@@ -9,7 +9,7 @@ export default function HeroSection() {
         alt={"Red Out Fundraiser Group Photo"}
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
 
       {/* Text Overlay */}
       <div className="absolute inset-0 flex items-end justify-start p-2 sm:p-4 md:p-6 lg:p-8">

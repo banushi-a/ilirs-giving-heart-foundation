@@ -58,9 +58,9 @@ export default function Event(event: EventProps) {
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
         {/* Event Name Overlay */}
-        <div className="text-5xl absolute inset-0 m-auto text-white text-center flex flex-col items-center gap-4 w-fit h-fit p-2">
+        <div className="text-4xl md:text-5xl absolute inset-0 m-auto text-white text-center flex flex-col items-center gap-4 w-fit h-fit p-2">
           <h2 className="font-bold">{event.name}</h2>
-          <p className="italic font-semibold">June 22nd 2024</p>
+          <p className="italic font-semibold">{event.date}</p>
           {event.volunteerLink && (
             <Button
               extraStyles="text-2xl"
