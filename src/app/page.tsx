@@ -1,18 +1,15 @@
-import AboutSection from "../components/AboutSection";
-import EventsSection from "../components/EventsSection";
-import HashtagSection from "../components/HashtagSection";
-import HeroSection from "../components/HeroSection";
-import VolunteerSection from "../components/VolunteerSection";
+import Hero from "@/src/components/Hero";
+import Mission from "../components/Mission";
+import RecentEvents from "../components/RecentEvents";
+import Impact from "../components/Impact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center w-screen">
-      {/* <Links /> */}
-      <HeroSection />
-      <AboutSection />
-      <HashtagSection />
-      <EventsSection />
-      <VolunteerSection />
-    </main>
+    <div className="min-h-screen w-full bg-background">
+      <Hero />
+      <Mission />
+      <RecentEvents />
+      <Impact />
+    </div>
   );
 }
