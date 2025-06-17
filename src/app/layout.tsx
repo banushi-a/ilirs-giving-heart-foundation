@@ -4,6 +4,7 @@ import "../styles/globals.css";
 export const metadata: Metadata = {
   title: "Ilir's Giving Heart Foundation",
   description: "",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({

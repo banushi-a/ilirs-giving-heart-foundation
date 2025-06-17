@@ -9,8 +9,7 @@ const RecentEvents = () => {
       time: "All Day",
       description:
         "Once met, never forgotten. Ilir was known for bringing people together and helping anyone in need. We celebrated his life with what he loved most: family, friends, and music. The block party tribute featured performances by Pink Houses, The Gary Band, Mad Tadders, and special guest Jason Stubbs.",
-      image:
-        "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/2bros-outside.jpg",
       status: "completed",
     },
     {
@@ -19,14 +18,16 @@ const RecentEvents = () => {
       time: "8:00 PM",
       description:
         "Edgerton and Milton basketball teams honored Ilir Banushi at this conference basketball game. The community showed up wearing red apparel in memory of Ilir, all proceeds being donated back into the community.\nAt the game, Ilir's youngest son, Brenon, played alongside his teammates to lead Milton to victory. Had the game been played a couple decades before, Ilir would be seen playing ball on the Edgerton side.",
-      image:
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/red-out-team.png",
       status: "completed",
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-green-50">
+    <section
+      className="py-20 bg-gradient-to-br from-blue-50 to-green-50"
+      id="recent-events"
+    >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -79,14 +80,14 @@ const RecentEvents = () => {
                 <p className="text-gray-600 leading-relaxed mb-4">
                   {event.description}
                 </p>
-
-                <Button
+                {/* TODO */}
+                {/* <Button
                   variant="outline"
                   className="group-hover:bg-red-500 group-hover:text-white group-hover:border-red-500 transition-all duration-300"
                 >
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                </Button> */}
               </div>
             </div>
           ))}

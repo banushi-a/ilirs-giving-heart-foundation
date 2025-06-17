@@ -24,7 +24,10 @@ const Impact = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-red-500 to-pink-500 text-white relative overflow-hidden">
+    <section
+      className="py-20 bg-gradient-to-r from-red-500 to-pink-500 text-white relative overflow-hidden"
+      id="about-us"
+    >
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
