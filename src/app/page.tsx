@@ -1,18 +1,19 @@
-import AboutSection from "../components/AboutSection";
-import EventsSection from "../components/EventsSection";
-import HashtagSection from "../components/HashtagSection";
-import HeroSection from "../components/HeroSection";
-import VolunteerSection from "../components/VolunteerSection";
+import Hero from "../components/Hero";
+import UpcomingEvents from "../components/UpcomingEvents";
+import ImpactSection from "../components/ImpactSection";
+import PastEvents from "../components/PastEvents";
+import DonateSection from "../components/DonateSection";
+import ContactSection from "../components/ContactSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center w-screen">
-      {/* <Links /> */}
-      <HeroSection />
-      <AboutSection />
-      <HashtagSection />
-      <EventsSection />
-      <VolunteerSection />
+    <main className="w-full overflow-x-hidden">
+      <Hero />
+      <UpcomingEvents />
+      <ImpactSection />
+      <PastEvents />
+      <DonateSection />
+      <ContactSection />
     </main>
   );
 }

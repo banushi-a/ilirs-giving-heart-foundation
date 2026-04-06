@@ -15,6 +15,21 @@ const config: Config = {
         "gh-red-400": "#ee483e",
         "gh-red-600": "#db2a21",
         "gh-red-800": "#c91910",
+        ink: "#0d0906",
+        crimson: {
+          DEFAULT: "#b91c1c",
+          deep: "#7f1d1d",
+          light: "#dc2626",
+        },
+        cream: {
+          DEFAULT: "#faf6ef",
+          dark: "#ede7d9",
+        },
+        gold: "#b5893a",
+      },
+      fontFamily: {
+        display: ["var(--font-playfair)", "serif"],
+        sans: ["var(--font-dm-sans)", "sans-serif"],
       },
     },
     animation: {
