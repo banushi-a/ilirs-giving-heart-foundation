@@ -11,15 +11,15 @@ interface UpcomingEvent {
 }
 
 const upcomingEvents: UpcomingEvent[] = [
-  // Add upcoming events here as they are scheduled.
-  // Example:
-  // {
-  //   title: "Summer 2025 Fundraiser",
-  //   date: "TBD — Summer 2025",
-  //   location: "To Be Announced",
-  //   description: "Details coming soon — follow #IlirProud for updates.",
-  //   type: "Fundraiser",
-  // },
+  {
+    title: "Ilir Fest 2026",
+    date: "Saturday, June 27, 2026 — Starting at Noon",
+    location:
+      "Two Brother's Bar & Grill, The Red Baron, Limbo Lounge & Lounge 1848",
+    description:
+      "Join us for an all-day celebration honoring Ilir, with a raffle drawing at 7:00 PM at the Limbo Lounge. First prize: 2026 Denago Rover XL 4-passenger golf cart. Second prize: private keg party at Lounge 1848. Third prize: Brewers baseball tickets for 4. Tickets are $20 each or 6 for $100 — need not be present to win.",
+    type: "Fundraiser · Raffle",
+  },
 ];
 
 export default function UpcomingEvents() {
