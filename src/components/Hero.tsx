@@ -1,5 +1,6 @@
 import Image from "next/image";
 import RedOutTeam from "../public/red-out-team.png";
+import Logo from "../public/IlirsGivingHeartFoundation.png";
 
 const DONATE_URL =
   "https://www.zeffy.com/en-US/donation-form/b5b13e8a-4447-46ca-955f-9ef805e10aee";
@@ -46,35 +47,17 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Main headline */}
-        <h1 className="font-display leading-[0.88] mb-10">
-          <span
-            className="block text-cream font-bold"
-            style={{
-              fontSize: "clamp(4rem, 12.5vw, 9.5rem)",
-              animation: "fadeUp 0.6s ease-out 0.2s both",
-            }}
-          >
-            Giving
-          </span>
-          <span
-            className="block text-crimson font-bold"
-            style={{
-              fontSize: "clamp(4rem, 12.5vw, 9.5rem)",
-              animation: "fadeUp 0.6s ease-out 0.3s both",
-            }}
-          >
-            Heart
-          </span>
-          <span
-            className="block text-cream/35 font-normal tracking-[0.18em] mt-4"
-            style={{
-              fontSize: "clamp(0.85rem, 2.5vw, 2rem)",
-              animation: "fadeUp 0.6s ease-out 0.4s both",
-            }}
-          >
-            FOUNDATION
-          </span>
+        {/* Main logo */}
+        <h1
+          className="mb-10"
+          style={{ animation: "fadeUp 0.6s ease-out 0.2s both" }}
+        >
+          <Image
+            src={Logo}
+            alt="Ilir's Giving Heart Foundation"
+            priority
+            className="w-[clamp(16rem,32vw,26rem)] h-auto"
+          />
         </h1>
 
         {/* Tagline */}
