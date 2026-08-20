@@ -30,51 +30,6 @@
   }
 }
 
-/* ── Ilir Fest popup animations ─────────────────────────── */
-@keyframes overlayIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes popIn {
-  0% {
-    opacity: 0;
-    transform: translateY(28px) scale(0.94);
-  }
-  60% {
-    transform: translateY(-4px) scale(1.005);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes popOut {
-  from {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(18px) scale(0.96);
-  }
-}
-
-/* Gold glint sweeping across the title */
-@keyframes shimmer {
-  0% {
-    background-position: -150% center;
-  }
-  100% {
-    background-position: 250% center;
-  }
-}
-
 /* Staggered children rising in */
 @keyframes riseIn {
   from {
@@ -94,25 +49,7 @@
   .animate-fade-up {
     animation: fadeUp 0.6s ease-out both;
   }
-  .animate-overlay-in {
-    animation: overlayIn 0.4s ease-out both;
-  }
-  .animate-pop-in {
-    animation: popIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
-  }
-  .animate-pop-out {
-    animation: popOut 0.3s ease-in both;
-  }
   .animate-rise-in {
     animation: riseIn 0.5s ease-out both;
-  }
-  .shimmer-text {
-    background-size: 200% auto;
-    animation: shimmer 4.5s linear infinite;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .shimmer-text {
-      animation: none;
-    }
   }
 }

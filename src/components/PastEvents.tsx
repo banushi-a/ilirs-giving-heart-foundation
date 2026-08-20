@@ -1,8 +1,20 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import IlirFest2026 from "../public/ilir-fest-2026.jpg";
 import TwoBros from "../public/2bros-outside.jpg";
 import RedOutTeam from "../public/red-out-team.png";
 
 const events = [
+  {
+    image: IlirFest2026,
+    title: "Ilir Fest 2026",
+    date: "Saturday, June 27th, 2026",
+    location: "Downtown Edgerton",
+    description:
+      "Ilir's spirit of giving and bringing friends and family together filled the streets of downtown Edgerton for an all-day celebration in his honor. From noon until well into the evening, the community gathered for food, music, and a raffle drawing to carry his generosity forward — continuing the foundation's mission of turning his memory into support for the people around us.",
+  },
   {
     image: TwoBros,
     title: "Celebration of Life Block Party",
@@ -20,6 +32,42 @@ const events = [
       "The community showed up wearing red in memory of Ilir, raising over $18,000 for educational grants. Ilir's youngest son Brenon led Milton to victory — playing the game his father would have played on the opposite side decades before.",
   },
 ];
+
+function EventPhoto({ image, alt }: { image: typeof TwoBros; alt: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-15% 0px -15% 0px" }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className="relative aspect-[4/3] overflow-hidden">
+      <Image
+        src={image}
+        alt={alt}
+        fill
+        className={`object-cover transition-all duration-700 ${
+          inView ? "grayscale-0" : "grayscale"
+        }`}
+      />
+    </div>
+  );
+}
 
 export default function PastEvents() {
   return (
@@ -45,17 +93,8 @@ export default function PastEvents() {
               }`}
             >
               {/* Photo */}
-              <div
-                className={`relative aspect-[4/3] overflow-hidden ${
-                  i % 2 === 1 ? "lg:col-start-2" : ""
-                }`}
-              >
-                <Image
-                  src={event.image}
-                  alt={event.title}
-                  fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                />
+              <div className={i % 2 === 1 ? "lg:col-start-2" : ""}>
+                <EventPhoto image={event.image} alt={event.title} />
               </div>
 
               {/* Text */}

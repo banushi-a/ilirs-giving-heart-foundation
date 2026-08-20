@@ -5,13 +5,13 @@ const stats = [
     detail: "Milton v. Edgerton Basketball Game",
   },
   {
-    number: "$40K+",
+    number: "$60K+",
     label: "in Scholarships",
-    detail: "Partnered with Chilimania",
+    detail: "Helping students pursue higher education",
   },
   {
-    number: "20+",
-    label: "Educational Grants",
+    number: "30+",
+    label: "Grants Given Out",
     detail: "Awarded to Edgerton students",
   },
   {
