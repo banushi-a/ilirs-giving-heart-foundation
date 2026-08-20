@@ -3,6 +3,8 @@ const VOLUNTEER_URL = "https://forms.fillout.com/t/vvjaUXLWRWus";
 interface UpcomingEvent {
   title: string;
   date: string;
+  /** ISO date (YYYY-MM-DD) marking the last day the event is considered upcoming. */
+  eventDate: string;
   location: string;
   description: string;
   type: string;
@@ -10,19 +12,18 @@ interface UpcomingEvent {
   linkLabel?: string;
 }
 
-const upcomingEvents: UpcomingEvent[] = [
-  {
-    title: "Ilir Fest 2026",
-    date: "Saturday, June 27, 2026 — Starting at Noon",
-    location:
-      "Two Brother's Bar & Grill, The Red Baron, Limbo Lounge & Lounge 1848",
-    description:
-      "Join us for an all-day celebration honoring Ilir, with a raffle drawing at 7:00 PM at the Limbo Lounge. First prize: 2026 Denago Rover XL 4-passenger golf cart. Second prize: private keg party at Lounge 1848. Third prize: Brewers baseball tickets for 4. Tickets are $20 each or 6 for $100 — need not be present to win.",
-    type: "Fundraiser · Raffle",
-  },
-];
+const allEvents: UpcomingEvent[] = [];
+
+function getUpcomingEvents(events: UpcomingEvent[]): UpcomingEvent[] {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  return events.filter((event) => new Date(`${event.eventDate}T00:00:00`) >= today);
+}
 
 export default function UpcomingEvents() {
+  const upcomingEvents = getUpcomingEvents(allEvents);
+
   return (
     <section className="bg-cream py-24 px-8 md:px-16 lg:px-24" id="events">
       <div className="max-w-6xl mx-auto">
